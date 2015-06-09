@@ -35,7 +35,7 @@ style="{% if page.image %}
                     {% if page.repourl %}
                     <paper-button onclick="href('{{ page.repourl }}')"><iron-icon icon="code"></iron-icon> Get Source Code</paper-button>
                     {% endif %}<br>
-                    {% if page.url %}
+                    {% if page.tryit %}
                     <paper-button onclick="href('{{ page.url }}')"><iron-icon icon="exit-to-app"></iron-icon> Try It!</paper-button>
                     {% endif %}<br>
                 {{ page.content }}
