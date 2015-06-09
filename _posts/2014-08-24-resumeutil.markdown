@@ -3,7 +3,7 @@ layout: post
 title: "ResumUtil"
 date: "2014-08-24"
 tags: web
-image : /resources/resumeutil_merged.png
+image : /resources/resumeutil.png
 repourl : https://github.com/sukso96100/resumeutil
 tryit : https://sukso96100.github.io/resumeutil
 ---
