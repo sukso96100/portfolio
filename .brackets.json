@@ -1,0 +1,5 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/home/youngbin/portfolio/_site/bower_components/web-animations-js/web-animations.min.js"
+    ]
+}

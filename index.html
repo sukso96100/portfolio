@@ -8,7 +8,7 @@ title: Home
         
       <span class="flex"></span>
         <paper-icon-button icon="home"></paper-icon-button>
-        <paper-icon-button icon="filter-list"></paper-icon-button>
+        <paper-icon-button onclick="openTagsDialog()" icon="filter-list"></paper-icon-button>
         <span class="bottom">Youngbin Han's Portfolio</span>
     </paper-toolbar>
       <div style="padding: 8px;" align="center">
@@ -23,8 +23,8 @@ title: Home
                     {% if post.image %}
                     <iron-image style="width:100%;" src="{{ site.baseurl }}/{{ post.image }}"></iron-image>
                      {% endif %}
-<a href="{{ post.url }}">
-  <h4 class="card-content" id="right-margin">{{ post.title }} <br><small>{{ post.date | date: "%Y/%m/%d" }}</small></h4>
+<a href="{{ site.baseurl }}/{{ post.url }}">
+  <h3 class="card-content" id="right-margin" style="padding:4px;">{{ post.title }} <br></h3>
 </a></paper-material></div>
                     {% endif %}
       {% endfor %}
@@ -35,4 +35,11 @@ title: Home
 {% endfor %}
       </div>
   </paper-scroll-header-panel>
+<paper-dialog style="padding:16px;" id="tagdialog">
+    <h2>Filter</h2>
+     {% for tag in site.tags %}<br>
+ <a href="#{{ tag | first }}">| {{ tag | first }} |</a>
+    {% endfor %}
+
+</paper-dialog>
 <script src="{{ "/js/common.js" | prepend: site.baseurl }}"></script>

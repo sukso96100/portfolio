@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<!--
+style="{% if page.image %}
+                          background-image: url({{ site.baseurl }}/{{ page.image }});
+                          background-size: cover;
+                          {% endif %}"
+-->
+  <paper-scroll-header-panel class="flex">
+    <paper-toolbar>
+        <paper-icon-button onclick="href('{{ site.baseurl }}/')" icon="arrow-back"></paper-icon-button>
+    </paper-toolbar>
+      <div align="center">
+          
+        <paper-material></paper-material>
+          
+          <div class="grid grid-pad" align="center">
+   
+                    <div class="col-1-2">
+                <paper-material class="content" elavation="1" >
+                {% if page.image %}
+                        <iron-image style="width:100%;" src="{{ site.baseurl }}/{{ page.image }}"></iron-image>
+                          {% endif %}<br>
+                    <h1 style="padding:8px;">{{ page.title }}</h1>
+                    <b>Initial release date</b><br>
+                    <p style="padding-bottom:8px;">{{ page.date | date: "%Y.%m.%d" }}</p>
+                        </paper-material></div>
+              <div class="col-1-2">
+                <paper-material class="content" elavation="1" style="padding:8px;">
+                    {% if page.repourl %}
+                    <paper-button onclick="href('{{ page.repourl }}')"><iron-icon icon="code"></iron-icon> Get Source Code</paper-button>
+                    {% endif %}<br>
+                    {% if page.url %}
+                    <paper-button onclick="href('{{ page.url }}')"><iron-icon icon="exit-to-app"></iron-icon> Try It!</paper-button>
+                    {% endif %}<br>
+                {{ page.content }}
+                        </paper-material></div>
+                 
+                </div>
+      </div>
+  </paper-scroll-header-panel>
+<script src="{{ "/js/common.js" | prepend: site.baseurl }}"></script>
