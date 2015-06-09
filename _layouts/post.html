@@ -25,6 +25,10 @@ style="{% if page.image %}
                     <h1 style="padding:8px;">{{ page.title }}</h1>
                     <b>Initial release date</b><br>
                     <p style="padding-bottom:8px;">{{ page.date | date: "%Y.%m.%d" }}</p>
+                    {% for tag in page.tags %}
+                <a class="card-content" href="{{ site.baseurl }}/#{{ tag }}"> 
+                    | {{ tag }} |</a>
+                {% endfor %}<br><br>
                         </paper-material></div>
               <div class="col-1-2">
                 <paper-material class="content" elavation="1" style="padding:8px;">
