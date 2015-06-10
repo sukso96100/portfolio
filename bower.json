@@ -25,6 +25,9 @@
     "iron-flex-layout": "PolymerElements/iron-flex-layout#^1.0.0",
     "neon-animation": "PolymerElements/neon-animation#^1.0.0",
     "paper-dialog": "PolymerElements/paper-dialog#^1.0.0",
-    "paper-dialog-scrollable": "PolymerElements/paper-dialog-scrollable#^1.0.0"
+    "paper-dialog-scrollable": "PolymerElements/paper-dialog-scrollable#^1.0.0",
+    "paper-drawer-panel": "PolymerElements/paper-drawer-panel#^1.0.0",
+    "paper-item": "PolymerElements/paper-item#^1.0.0",
+    "paper-menu": "PolymerElements/paper-menu#^1.0.0"
   }
 }

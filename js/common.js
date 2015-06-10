@@ -1,5 +1,5 @@
-function openTagsDialog(){
-    document.getElementById("tagdialog").opened = true;
+function openTagsDrawer(){
+    document.getElementById("drawerPanel").openDrawer();
 }
 
 function href(url){

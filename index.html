@@ -3,15 +3,34 @@ layout: default
 title: 
 ---
 
-  <paper-scroll-header-panel class="flex">
+<paper-drawer-panel right-drawer id="drawerPanel">
+    <paper-header-panel drawer>
+        <paper-toolbar>
+        <div>Filter</div>
+        </paper-toolbar>
+    <paper-menu>
+        {% for tag in site.tags %}
+        <paper-item onclick="href('#{{ tag | first }}')">{{ tag | first }}</paper-item>
+    {% endfor %}
+        </paper-menu>
+    </paper-header-panel>
+  <paper-scroll-header-panel class="flex" main>
     <paper-toolbar>
         
       <span class="flex"></span>
         <paper-icon-button onclick="href('/')" icon="home"></paper-icon-button>
-        <paper-icon-button onclick="openTagsDialog()" icon="filter-list"></paper-icon-button>
+        <paper-icon-button onclick="openTagsDrawer()" icon="filter-list"></paper-icon-button>
         <span class="bottom">Youngbin Han's Portfolio</span>
     </paper-toolbar>
       <div style="padding: 8px;" align="center">
+          <div class="grid grid-pad" align="center">
+                    <div class="col-1-3">
+                    <paper-button class="content" onclick="href('https://play.google.com/store/apps/dev?id=8834426665679982263')"><iron-icon icon="android"></iron-icon> Google Play Developer Page</paper-button>
+          </div>
+               <div class="col-1-3">
+                    <paper-button class="content" onclick="href('https://github.com/sukso96100?tab=repositories')"><iron-icon icon="code"></iron-icon> Repositories On GitHub</paper-button>
+              </div>
+                </div>
       {% for tag in site.tags %}<br>
   <h2 class="card-content" id="{{ tag | first }}">{{ tag | first }} ↓</h2>
     {% for posts in tag %}
@@ -35,11 +54,7 @@ title:
 {% endfor %}
       </div>
   </paper-scroll-header-panel>
-<paper-dialog style="padding:16px;" id="tagdialog">
-    <h2>Filter</h2>
-     {% for tag in site.tags %}<br>
- <a href="#{{ tag | first }}">| {{ tag | first }} |</a>
-    {% endfor %}
 
-</paper-dialog>
+</paper-drawer-panel>
+
 <script src="{{ "/js/common.js" | prepend: site.baseurl }}"></script>
