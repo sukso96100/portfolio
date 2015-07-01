@@ -2,6 +2,7 @@
 layout: post
 title: "모바일일신"
 date: "2012-11-08"
+last-update: "2013-01-01"
 tags: android
 image : /resources/mobileilsin.png
 repourl : https://github.com/sukso96100/mobileilsin
