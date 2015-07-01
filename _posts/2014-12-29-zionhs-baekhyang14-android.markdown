@@ -2,6 +2,7 @@
 layout: post
 title: "시온고 백향제 2014 안드로이드 앱"
 date: "2014-12-29"
+last-update: "2014-12-26"
 tags: android
 image : /resources/baekhyang14.png
 repourl : https://github.com/sukso96100/baekhyang14-android
