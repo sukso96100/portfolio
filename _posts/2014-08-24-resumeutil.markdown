@@ -2,6 +2,7 @@
 layout: post
 title: "ResumUtil"
 date: "2014-08-24"
+last-update: "2015-06-07"
 tags: web
 image : /resources/resumeutil.png
 repourl : https://github.com/sukso96100/resumeutil
