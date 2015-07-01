@@ -2,6 +2,7 @@
 layout: post
 title: "시온고 백향제 2014 웹사이트"
 date: "2014-12-29"
+last-update: "2015-06-09"
 tags: web
 image : /resources/baekhyang14web.png
 repourl : https://github.com/sukso96100/baekhyang14
