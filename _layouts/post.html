@@ -23,8 +23,10 @@ style="{% if page.image %}
                         <iron-image style="width:100%;" src="{{ site.baseurl }}/{{ page.image }}"></iron-image>
                           {% endif %}<br>
                     <h1 style="padding:8px;">{{ page.title }}</h1>
-                    <b>Initial release date</b><br>
+                    <b>Initial Release Date</b><br>
                     <p style="padding-bottom:8px;">{{ page.date | date: "%Y.%m.%d" }}</p>
+                    <b>Last Ypdate</b><br>
+                    <p style="padding-bottom:8px;">{{ page.last-update | date: "%Y.%m.%d" }}</p>
                     {% for tag in page.tags %}
                 <a class="card-content" href="{{ site.baseurl }}/#{{ tag }}"> 
                     | {{ tag }} |</a>
