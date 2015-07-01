@@ -2,6 +2,7 @@
 layout: post
 title: "안드로이드용 시온고 앱"
 date: "2013-12-06"
+last-update: "2015-02-09"
 tags: android
 image : /resources/zionhs_android.png
 repourl : https://github.com/sukso96100/zionhs
