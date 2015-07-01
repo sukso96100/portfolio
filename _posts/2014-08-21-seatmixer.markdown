@@ -2,6 +2,7 @@
 layout: post
 title: "Seat Mixer"
 date: "2014-08-21"
+last-update: "2015-07-02"
 tags: web
 image : /resources/seatmixer.png
 repourl : https://github.com/sukso96100/seatmixer
