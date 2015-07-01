@@ -2,6 +2,7 @@
 layout: post
 title: "SidePanel"
 date: "2013-02-23"
+last-update: "2013-04-25"
 tags: android
 image : /resources/sidepanel.png
 repourl : https://github.com/sukso96100/SidePanel
