@@ -2,6 +2,7 @@
 layout: post
 title: "Programmer's Proverbs"
 date: "2015-04-12"
+last-update: "2015-06-13"
 tags: android
 image : /resources/programmers-proverbs-android.png
 repourl : https://github.com/sukso96100/programmers-proverbs-android
