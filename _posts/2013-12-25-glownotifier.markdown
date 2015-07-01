@@ -2,6 +2,7 @@
 layout: post
 title: "GlowNotifier"
 date: "2013-12-25"
+last-update: "2013-03-21"
 tags: android
 image : /resources/glownotifier.png
 repourl : https://github.com/sukso96100/GlowNotifier
